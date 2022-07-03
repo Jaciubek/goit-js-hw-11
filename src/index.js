@@ -1,9 +1,12 @@
+//zadanie domowe 10
+
+//imports
 import './css/styles.css';
+
+import axios from "axios";
 
 import Notiflix from 'notiflix';
 import 'notiflix/dist/notiflix-3.2.5.min.css';
-
-import axios from "axios";
 
 import SimpleLightbox from "simplelightbox";
 import 'simplelightbox/dist/simple-lightbox.min.css';
@@ -27,10 +30,10 @@ btnMore.addEventListener("click", loadMore);
 
 
 
-// Functions
-function search(event) {
+// Funct.
+function search(e) {
 
-  event.preventDefault();
+  e.preventDefault();
   const query = searchQuery.value;
   limit = 40;
   gallery.innerHTML = "";
@@ -107,6 +110,7 @@ function renderPhotosInfo({ totalHits, hits }) {
   gallery.innerHTML = markup;
 
   const lightbox = new SimpleLightbox('.gallery__link');
+  
   lightbox.refresh();
 
 };

@@ -23,9 +23,9 @@ p {
 .search-form {
   width: 100%;
   height: 100px;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  background: linear-gradient(30deg,red, orange, yellow, rgb(0, 255, 0), blue, rgb(255, 1, 255));
+  background-size: 750% 750%;
+  animation: gradient 30s ease infinite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,15 +47,17 @@ p {
 .search-icon {
   width: 15px;
   height: 15px;
-  fill: #fafafa;
+  fill: #000000;
 }
 .search-form button{
-  border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
   width: 40px;
   height: 40px;
   padding: 0px;
-  background-color: #2ea44f;
+  background: linear-gradient(30deg, red, orange, yellow, rgb(0, 255, 0), blue, rgb(255, 1, 255));
+  background-size: 750% 750%;
+  animation: gradient 30s ease infinite;
   border: 1px solid rgba(27, 31, 35, .15);
   border-left: 0px;
 }
@@ -65,11 +67,13 @@ p {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #2ea44f;
+  background: linear-gradient(30deg, red, orange, yellow, rgb(0, 255, 0), blue, rgb(255, 1, 255));
+  background-size: 750% 750%;
+  animation: gradient 30s ease infinite;
   border: 1px solid rgba(27, 31, 35, .15);
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-  color: #fff;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -83,11 +87,11 @@ p {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content:space-around;
 }
 .photo-card{
   margin-bottom: 40px;
-  width: 400px;
+  width: 500px;
   -webkit-box-shadow: 3px 7px 14px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 3px 7px 14px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 7px 14px -9px rgba(0, 0, 0, 0.75);
@@ -95,7 +99,7 @@ p {
 .photo-card img {
   display: block;
   width: 100%;
-  height: 200px;
+  height: 333px;
 }
 .info{
   display: flex;
@@ -111,30 +115,30 @@ input {
   height: 40px;
   border: 1px solid rgba(27, 31, 35, .15);
   border-right: 0px;
-  border-bottom-left-radius: 6px;
-  border-top-left-radius: 6px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
   padding: 11px 14px 9px;
   font-size: 16px;
   transition: border 0.4s;
 }
 input:focus {
-  border: 2px solid rgba(46, 164, 79, .4);
+  border: 2px solid rgba(46, 93, 164, 0.486);
   border-right: 0px;
 }
 
 button:hover {
-  background-color: #2c974b;
+  background-color: #16c4bb;
 }
 
 button:focus {
-  box-shadow: rgba(46, 164, 79, .4) 0 0 0 1px;
+  box-shadow: rgba(6, 141, 219, 0.61) 0 0 0 1px;
 
 }
 
 button:disabled {
   background-color: #94d3a2;
-  border-color: rgba(27, 31, 35, .1);
-  color: rgba(255, 255, 255, .8);
+  border-color: rgba(36, 41, 46, 0.1);
+  color: rgba(255, 255, 255, 0.733);
   cursor: default;
 }
 @media (max-width: 480px) {
